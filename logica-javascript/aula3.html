@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Primeira maneira</h1>
+   
+   <script>
+
+    /*
+    para escrever demorado ("blabla" + "blabla" + media) = "" 
+    
+    para escrever rápidp (`olá, ${media}`) = ``
+    */
+
+    var ano = 2020
+
+        window.document.write("Lara tem: " + (ano - 2000) + " anos" + "<br>");
+        document.write("Laura tem: " + (ano - 2006) + " anos" + "<br>");
+
+        ano = 2022 /*se vamos atribuir um novo valor a uma variável já existente, então é só declarar novamente */
+        document.write("Ana tem: " + (ano -1999) + " anos" + "<br>" )
+
+    var media = ((20+14+23)/3)
+    
+        document.write(`A média das idades é: ${Math.round(media)} <br> <br>`)
+
+        /*Math.round() VS */
+
+        var idadeAna = 20   
+        var idadeLara = 14
+        var idadeLaura = 23
+        var mediaOrganizada =  ((20+14+23)/3)       
+
+        document.write(`<h1>Outra maneira</h1><p>A média das idades é: ${Math.round(mediaOrganizada)}</p>`)
+   </script>
+</body>
+</html>
