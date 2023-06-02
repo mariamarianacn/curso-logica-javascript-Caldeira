@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pularLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostrar(frase){
+
+            document.write(frase);
+            pularLinha();
+        }
+
+        function calcularIMC(peso, altura) {
+            
+            var imc = peso / (altura*altura);
+            return imc; // para não ter que especificar qual o imc desejado, retornamos apenas o imc como o cálculo || depois, indicamos a variável que calculará os pesos e alturas
+        }
+
+        var imcFlavio = calcularIMC(80, 1.80);
+        var imcAmigo = calcularIMC(49, 1.53);
+        var imcInimigo = calcularIMC(60, 1.60);
+    
+        // linhas separadas!! não pode estar na function SEMPRE!!
+
+        // var imcTotal = calcularIMC(49, 1.53) + calcularIMC(80, 1.80);
+
+        //as variáveis auxiliares são mais compreensíveis (ao meu ver) || 
+
+        var imcTotal = imcAmigo + imcFlavio + imcInimigo
+
+        document.write("O imc do amigo é: " + Math.round(imcAmigo) + "<br>");
+        document.write(` O imc do Flavio é: ${Math.round(imcFlavio)} <br>`);
+        document.write(`O imc do inimigo é: ${Math.round(imcInimigo)} <br>`);
+
+        mostrar(`O imc total é = ${Math.round(imcTotal)}`);
+    </script>
+</body>
+</html>
