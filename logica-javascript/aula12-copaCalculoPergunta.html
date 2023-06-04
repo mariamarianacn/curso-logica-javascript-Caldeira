@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var fim = Number(prompt("Qual a copa limite?"));
+
+        var inicioCopa = 1930
+
+        while (inicioCopa <= fim){  
+            
+            mostrar(`Teve copa em ${inicioCopa}`)
+            inicioCopa = inicioCopa + 4  // se não tiver isso, nada é contado
+        }
+
+
+        // CUIDAR COM A ORDEM DO WHILE
+        // colocar o inicioCopa primeiro acarreta em: olhar o 2010 e adicionaria mais quatro
+
+        // o while aceita o parametro TRUE, mas ele repete a coisa ao infinito e além   
+    </script>
+</body>
+</html>

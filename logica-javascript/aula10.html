@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <script></script>
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        function calcularImc(peso, altura){ //MANTENHA A ORDEM DOS PARAMETROS
+            return peso / (altura * altura);
+
+        }
+
+        var nome = window.prompt("Qual seu nome?");
+        var pesoInformado = Number(prompt("Qual o seu peso?"));
+        var alturaInformada = Number(prompt("Qual a sua altura?"));
+
+        var imc = calcularImc(pesoInformado, alturaInformada); //MANTENHA A ORDEM DOS PARAMETROS
+
+        mostrar(`${nome}, o seu IMC é ${Math.round(imc)}`);
+
+        if( imc < 18.5){
+            mostrar("Você está abaixo do recomendado");
+        } if (imc > 35){
+            mostrar("Você está acima do recomendado");
+        } if (imc >= 18.5 && imc <=35){
+            mostrar("IMC excelente!")
+        } 
+    </script>
 </body>
 </html>

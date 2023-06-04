@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +8,22 @@
 </head>
 <body>
     <script>
-        function pularLinha() {
-            document.write("<br><br>");
+        function pulaLinha(){
+            document.write("<br><br>")
         }
 
         function mostrar(frase){
-
             document.write(frase);
-            pularLinha();
+            pulaLinha();
         }
 
-        function calcularIMC(peso, altura) {
+         var multiplicador = 0;
+         
+         while (multiplicador <= 10){
             
-            var imc = peso / (altura*altura);
-            mostrar("O imc calculado foi: " + Math.round(imc));
-        }
-
-        calcularIMC(80, 1.80);
-        calcularIMC(49, 1.53)
+            mostrar(` 4 x ${multiplicador} = ${multiplicador*4}`);
+            multiplicador = multiplicador + 1;
+         }
     </script>
 </body>
 </html>

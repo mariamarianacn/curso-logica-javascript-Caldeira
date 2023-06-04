@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostrar(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+         var multiplicador = 0;
+         
+         for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1){
+            
+            mostrar(` 4 x ${multiplicador} = ${multiplicador*4}`);
+         }    
+
+         // igual ao while!
+    </script>
+</body>
+</html>
