@@ -8,14 +8,38 @@
 </head>
 <body>
     <script>
-        function pulaLinha(){
-            document.write("<br><br>")
-        }
+      
+      function pulaLinha(){
+        document.write("<br><br>")
+      }
 
-        function mostrar(frase){
-            document.write(frase);
-            pulaLinha();
-        }
+      function mostrar(frase){
+        document.write(frase);
+        pulaLinha()
+      }
+
+      const numeroPensado = Math.round(Math.random()* 10) // maior que zero e menor que um
+
+      let tentativas = 1
+
+      while(tentativas <= 3){
+
+        const chute = Number(prompt("Digite um chute!"))
+
+        if (chute == numeroPensado){
+            mostrar("Você acertou!")
+            break; // colocou o break? sai desse while e para total!
+            
+      } else {
+            mostrar(`Opa, você errou.`)
+      }
+
+      tentativas++
+      }
+
+      document.write("Acabou as tentativas...")
+
+     
     </script>
 </body>
 </html>

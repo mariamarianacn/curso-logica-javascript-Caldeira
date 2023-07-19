@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="entrar" type="text">
+    <button onclick="clicar()">Teste meu segredo!</button>
+
+    <script>
+
+        const segredo = [1,2,3,4]
+
+        const entrada = document.querySelector(".entrar")
+
+        input.focus()
+
+        function clicar() {
+
+            var valorEncontrado = false;
+
+            for (let indice = 0; indice < segredo.length; indice++) {
+                if (entrada.value == segredo[indice]){
+                    
+                    valorEncontrado = true
+
+                    alert("acertou!")
+                    
+                    break
+                }
+            }
+
+            if (valorEncontrado == false){alert("você errou!")}
+
+            entrada.value = ""
+                    entrada.focus()
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+   let quantidadeCarbono1 = Number(prompt("Digite o primeiro número:"));
+
+   let quantidadeCarbono2 = Number(prompt("Digite o outro número:"))
+
+   if (quantidadeCarbono1 == quantidadeCarbono2){
+        mostra("Parecem subs. parecidas")
+   } else{
+    mostra("Subs. diferentes...")
+   }
+    </script>
+</body>
+</html>

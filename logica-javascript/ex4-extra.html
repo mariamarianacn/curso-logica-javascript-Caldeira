@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+        var anoCopaInicio = 1930;
+        var anoCopaUser = Number(window.prompt("Digite uma data limite:"))
+
+        var totalCopas = parseInt((anoCopaUser - anoCopaInicio)/4) // isso aqui DEVE estar antes da estrutura While
+
+        while (anoCopaInicio <= anoCopaUser){
+            mostra("Teve copa em: " + anoCopaInicio)
+            anoCopaInicio = anoCopaInicio + 4
+        }
+
+
+        mostra(`E ao todo foram ${totalCopas} copas.`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso){
+        let imc = peso / (Math.pow(altura, 2))
+        return imc
+    }
+     
+    const imcCalculado = calculaImc(1.50, 60)
+
+    mostra(`O imc calculado é: ${imcCalculado}}`) // TEM QUE CRIAR A VAR ALI
+
+    mostra(`o imc calculado é ${calculaImc(1.40, 70)}`)
+
+</script>
+</body>
+</html>

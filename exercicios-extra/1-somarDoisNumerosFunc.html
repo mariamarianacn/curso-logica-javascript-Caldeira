@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostarFrase(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function adicionarNumeros(numero1, numero2){
+            let soma = numero1 + numero2;
+            mostarFrase(`A soma entre ${numero1} e ${numero2} é ${soma}`)
+            
+        }
+
+        adicionarNumeros(1,2)    
+
+    </script>
+</body>
+</html>

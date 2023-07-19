@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function pulaLinha(){
+        document.write("<br><br>")
+    }
+
+    function mostrar(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    for (let linhas = 1; linhas <= 3; linhas++){
+
+
+        for (let asteriscos = 1; asteriscos <= 10; asteriscos++){
+            document.write("*")
+        }
+
+        pulaLinha()
+    }
+
+    </script>
+</body>
+</html>

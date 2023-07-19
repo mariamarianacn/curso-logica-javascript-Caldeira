@@ -18,13 +18,14 @@
         }
 
         var totalFamiliares = Number(prompt("Qual o número de familiares?"));
-        var numeroParaWhile = 1;
+        var numeroDeFamiliaPerguntar = 1;
         var totalIdades = 0;
 
-        while (numeroParaWhile <= totalFamiliares){
+        while (numeroDeFamiliaPerguntar <= totalFamiliares){
             var idade = Number(prompt("Digite a idade de um familiar:"))
             totalIdades= totalIdades + idade;
-            numeroParaWhile++
+            
+            numeroDeFamiliaPerguntar++
         }
 
         var mediaIdades = totalIdades/totalFamiliares;

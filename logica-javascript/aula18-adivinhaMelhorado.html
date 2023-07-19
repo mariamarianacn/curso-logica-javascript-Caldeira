@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="entrar" type="text">
+    <button onclick="clicar()" >Compare com o número secreto</button>
+
+    <script>
+
+        var segredo =  Math.round(Math.random()*10)
+
+          
+        const entrada = document.querySelector(".entrar")
+
+        entrada.focus()  
+
+        function clicar(){
+            if (entrada.value == segredo){
+                alert("você acertou!")
+            } else {
+                alert("você ERROU!")
+            }
+
+            entrada.value = "" // limpa a caixa
+            entrada.focus() // fica piscandinho para ficar dinâmicco
+        }
+
+    </script>
+</body>
+</html>
